@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.connection.url">
+            jdbc:oracle:thin:@localhost:1521:xe
+        </property>
+
+        <property name="hibernate.connection.username">system</property>
+        <property name="hibernate.connection.password">Bharath2006</property>
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Correct mappings -->
+        <mapping class="com.kce.entity.Donor"/>
+        <mapping class="com.kce.entity.DonationAppointment"/>
+
+    </session-factory>
+</hibernate-configuration>
